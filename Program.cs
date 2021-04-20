@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DeliveryFootRestorant;
+using FoodDelivery.Models;
+using System;
 
 
 namespace FoodDelivery
@@ -12,6 +14,8 @@ namespace FoodDelivery
             Console.WriteLine("Доставка їжі Блиц-блиц без границ");
             Console.WriteLine("");
             data.InvokePriceCalculatiion();
+            Delivery delivery = new Delivery();
+            
             Console.ReadLine();
         }
         
