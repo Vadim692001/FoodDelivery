@@ -12,7 +12,7 @@ namespace DeliveryFootRestorant
         public string Surname { get; set; }
         public string Name { get; set; }
         public string Photo { get; set; }
-        public DateTime BirthDay { get; set; }
+        public DateTime Birthday { get; set; }
         public string Phone { get; set; }
     }
 }
