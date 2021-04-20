@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DeliveryFootRestorant
 {
-    class Seller
+    public class Seller
     {
-        public int IdSeller { get; set; }
+        private int Id { get; set; }
         public string CompanyName { get; set; }
-        public Product ProductNameSeller { get; set; }
+        public Product Product { get; set; }
         public decimal Price { get; set; }
     }
 }
