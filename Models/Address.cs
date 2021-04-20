@@ -8,9 +8,9 @@ namespace FoodDelivery.Models
 {
   public class Address
     {
-        public string AddressCity { get; set; }
-        public string AddressStreet { get; set; }
-        public string AddressHouse { get; set; }
-        public string AddressRooms { get; set; }
+        public string City { get; set; }
+        public string Street { get; set; }
+        public string House { get; set; }
+        public string Rooms { get; set; }
     }
 }
