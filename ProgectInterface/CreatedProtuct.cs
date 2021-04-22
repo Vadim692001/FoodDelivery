@@ -23,7 +23,7 @@ namespace FoodDelivery.ProgectInterface
             Console.WriteLine("Ведіть ціну за якою продаватимете свій товар ");
             decimal.TryParse(Console.ReadLine(), out decimal res);
             seller.Price = res;
-            Console.WriteLine("Товар додано");
+            Console.WriteLine("-------------------Товар додано--------------------");
             DataOutputConsole(seller.CompanyName, seller.Product.Name, seller.Price);
                 Console.ReadKey();
                 Console.Clear();
