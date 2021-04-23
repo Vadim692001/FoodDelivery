@@ -9,7 +9,11 @@ namespace FoodDelivery.ProgectInterface
 {
   public  class CreatedProduct
     {
+<<<<<<< HEAD:ProgectInterface/CreatedProduct.cs
         public static void CreatedNewProduct() 
+=======
+        public static void CreateNewProduct() 
+>>>>>>> 97737ab31849cb0b626113767c128bf7520667be:ProgectInterface/CreatedProtuct.cs
         {
             Seller seller = new Seller();
             Console.WriteLine("Скільки продуктів ви хочете додати");
