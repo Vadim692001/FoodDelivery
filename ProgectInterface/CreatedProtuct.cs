@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace FoodDelivery.ProgectInterface
 {
-  public  class CreatedProduct
+  public  class CreatedProtuct
     {
-        public static void CreateNewProduct() 
+        public static void AddingNewProduct() 
         {
             Seller seller = new Seller();
             Console.WriteLine("Скільки продуктів ви хочете додати");

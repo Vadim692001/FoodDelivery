@@ -1,5 +1,5 @@
 ﻿using System;
-using static FoodDelivery.ProgectInterface.CreatedProduct;
+using static FoodDelivery.ProgectInterface.CreatedProtuct;
 using static FoodDelivery.ProgectInterface.CreatedOrderProduct;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +26,7 @@ namespace FoodDelivery.ProgectInterface
                 switch (input) 
                 {
                     case 1: Order(); break;
-                    case 2: CreateNewProduct(); break;
+                    case 2: AddingNewProduct(); break;
                     case 3: IsOpen = false; break;
                     default:Console.WriteLine("Ви вели не коректну команду ");break;
                         
