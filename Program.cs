@@ -11,7 +11,6 @@ namespace FoodDelivery
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Default;
-            TestDataCustomer testDataProduct = new TestDataCustomer();
             Run();
             Console.ReadLine();
         }
