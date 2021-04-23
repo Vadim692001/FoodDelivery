@@ -1,5 +1,7 @@
 ﻿using System;
 using static FoodDelivery.TestData.TestDataProduct;
+using static FoodDelivery.ValidateData.Check;
+using static FoodDelivery.ProgectInterface.OutputDataProductConsole;
 namespace FoodDelivery.ProgectInterface
 {
     public class CreatedOrderProduct
@@ -33,23 +35,7 @@ namespace FoodDelivery.ProgectInterface
             Console.WriteLine("Загальна сума:"+fullPrice);
             return fullPrice;
         }
-        private static decimal OutputDataConsole(int numberProduct, int numberPortion)
-        {
-            Console.WriteLine($"Назва продукту:{products[numberProduct - 1].Name,10}," +
-                        $"Ціна за порцію:{products[numberProduct - 1].Price}," +
-                        $"Кількість замовлених порцій:{numberPortion}" +
-                        $"Сума до сплати:{(products[numberProduct - 1].Price) * numberPortion}");
-            return (products[numberProduct - 1].Price) * numberPortion;
-    }
-        private static bool AvailabilityPortions(int numberPortion, int numberProduct) 
-        {
-            if (products[numberProduct - 1].Portion <= numberPortion)
-            {
-                Console.WriteLine("Не достатнь поцій,можливо замовите щось інше");
-                return false;
-                
-            }
-            return true;
-        }
+       
+        
     }
 }
