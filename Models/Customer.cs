@@ -15,5 +15,19 @@ namespace DeliveryFootRestorant
         public int Age { get; set; }
         public string Phone { get; set; }
         public Address Address { get; set; }
+
+        public Customer() { Address = new Address(); }
+        public Customer(string surname,string name,string adresscity,string adressstreat,string adresshouse,string adressroom) 
+        {
+            Address = new Address();
+            Surname = surname;
+            Name = name;
+            Address.City = adresscity;
+            Address.Street = adressstreat;
+            Address.House = adresshouse;
+            Address.Rooms = adressroom;
+        }
     }
+        
+
 }

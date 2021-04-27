@@ -1,7 +1,8 @@
 ﻿using DeliveryFootRestorant;
 using FoodDelivery.Models;
+using FoodDelivery.TestData;
 using System;
-
+using static FoodDelivery.ProgectInterface.Started;
 
 namespace FoodDelivery
 {
@@ -10,12 +11,7 @@ namespace FoodDelivery
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Default;
-            Data data = new Data();
-            Console.WriteLine("Доставка їжі Блиц-блиц без границ");
-            Console.WriteLine("");
-            data.InvokePriceCalculatiion();
-            Delivery delivery = new Delivery();
-            
+            Run();
             Console.ReadLine();
         }
         
