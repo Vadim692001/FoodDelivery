@@ -1,13 +1,8 @@
 ﻿using System;
 using static FoodDelivery.TestData.TestDataProduct;
-<<<<<<< HEAD
 using static FoodDelivery.ValidateData.Check;
 using static FoodDelivery.ProgectInterface.OutputDataProductConsole;
-=======
 
-
-
->>>>>>> 97737ab31849cb0b626113767c128bf7520667be
 namespace FoodDelivery.ProgectInterface
 {
     public class CreatedOrderProduct
@@ -18,7 +13,7 @@ namespace FoodDelivery.ProgectInterface
             Console.Clear();
             Console.WriteLine("------------Раді вас вітати в нашому сервісі------------------");
             Console.WriteLine("Наявні товари ");
-            OutputConsole();
+            OutputStartDataConsole();
             OrderFormation();
         }
 
@@ -37,32 +32,14 @@ namespace FoodDelivery.ProgectInterface
                 if (AvailabilityPortions(numberPortion, numberProduct) != true) { products.Clear(); break; }
                 orderPrice = OutputDataConsole(numberProduct, numberPortion);
                 fullPrice += orderPrice;
+                NewPortion(numberPortion, numberProduct);
+                OutputNewPortionDataConsole();
             }
             Console.WriteLine("Загальна сума:" + fullPrice);
+            products.Clear();
             return fullPrice;
         }
-<<<<<<< HEAD
-       
-        
-=======
-        private static decimal OutputDataConsole(int numberProduct, int numberPortion)
-        {
-            Console.WriteLine($"Назва продукту:{products[numberProduct - 1].Name,10}," +
-                        $"Ціна за порцію:{products[numberProduct - 1].Price}," +
-                        $"Кількість замовлених порцій:{numberPortion}" +
-                        $"Сума до сплати:{(products[numberProduct - 1].Price) * numberPortion}");
-            return (products[numberProduct - 1].Price) * numberPortion;
-        }
-        private static bool AvailabilityPortions(int numberPortion, int numberProduct)
-        {
-            if (products[numberProduct - 1].Portion <= numberPortion)
-            {
-                Console.WriteLine("Не достатнь поцій,можливо замовите щось інше");
-                return false;
 
-            }
-            return true;
-        }
->>>>>>> 97737ab31849cb0b626113767c128bf7520667be
+      
     }
 }

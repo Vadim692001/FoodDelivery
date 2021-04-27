@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DeliveryFootRestorant;
+using System;
+using System.Collections.Generic;
 using static FoodDelivery.TestData.TestDataProduct;
 namespace FoodDelivery.ValidateData
 {
@@ -10,9 +12,15 @@ namespace FoodDelivery.ValidateData
             {
                 Console.WriteLine("Не достатнь поцій,можливо замовите щось інше");
                 return false;
-
             }
             return true;
         }
+
+        public static int NewPortion(int numberPortion, int numberProduct) 
+        {
+            var NewPortion = products[numberProduct - 1].Portion - numberPortion;
+       
+            return products[numberProduct - 1].Portion = NewPortion; 
+        } 
     }
 }

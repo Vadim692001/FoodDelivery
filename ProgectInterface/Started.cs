@@ -26,14 +26,9 @@ namespace FoodDelivery.ProgectInterface
                 switch (input) 
                 {
                     case 1: Order(); break;
-<<<<<<< HEAD
-                    case 2: CreatedNewProduct(); break;
-=======
                     case 2: CreateNewProduct(); break;
->>>>>>> 97737ab31849cb0b626113767c128bf7520667be
                     case 3: IsOpen = false; break;
-                    default:Console.WriteLine("Ви вели не коректну команду ");break;
-                        
+                    default:Console.WriteLine("Ви вели не коректну команду ");break;  
                 }
             }
         }

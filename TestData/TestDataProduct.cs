@@ -14,7 +14,7 @@ namespace FoodDelivery.TestData
     {
      public static List<Product> products = new List<Product>();
 
-        private   static List<Product> TestDataProducts()
+        public  static List<Product> TestDataProducts()
         {
             products.Add(new Product("Хінкалі",150,60,9));
             products.Add(new Product("Борщ", 250, 70, 8));
@@ -28,20 +28,6 @@ namespace FoodDelivery.TestData
             
             return products;
         }
-
-        public static void OutputConsole()
-        {
-            TestDataProducts();
-            for (int i = 0; i < products.Count; i++)
-            {
-                Console.Write(i+1+"\t");
-                Console.WriteLine($"Назва страви:{products[i].Name ,10},\tМаса в одній порції:{products[i].Mass},\t" +
-                    $"Ціна за порцію:{products[i].Price},\tПорцій в найовності:{products[i].Portion}\t") ;
-            }
-
-        }
-
-     
     }
 
 }

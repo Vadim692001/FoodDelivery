@@ -20,20 +20,6 @@ namespace FoodDelivery.TestData
 
             return customers;
         }
-
-        public void OutputConsole()
-        {
-            TestDataCustomers();
-            for (int i = 0; i < customers.Count; i++)
-            {
-                Console.WriteLine($"Прізвище клієнта:{customers[i].Surname,10}," +
-                    $"Ім'я клієнта:{customers[i].Name,10}," +
-                    $"Місто:{customers[i].Address.City,8}," +
-                    $"Вулиця:{customers[i].Address.Street,8}," +
-                    $"Будинок:{customers[i].Address.House,5}," +
-                    $"Кімната:{customers[i].Address.Rooms,5},");
-            }
-
-        }
+       }
     }
-}
+
